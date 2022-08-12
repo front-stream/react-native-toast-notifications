@@ -195,7 +195,7 @@ const Toast: FC<ToastProps> = (props) => {
     Animated.timing(getPanResponderAnim(), {
       toValue: { x: (-dims.width / 10) * 9, y: gestureState.dy },
       useNativeDriver: Platform.OS !== "web",
-      duration: 250,
+      duration: 150,
     }).start(() => onDestroy());
   };
 
@@ -203,7 +203,7 @@ const Toast: FC<ToastProps> = (props) => {
     Animated.timing(getPanResponderAnim(), {
       toValue: { x: (dims.width / 10) * 9, y: gestureState.dy },
       useNativeDriver: Platform.OS !== "web",
-      duration: 250,
+      duration: 150,
     }).start(() => onDestroy());
   };
 
